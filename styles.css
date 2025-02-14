@@ -1,0 +1,227 @@
+:root {
+    --Evolum: #c20836;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: 200ms;
+    text-align: center;
+
+}
+@font-face {
+    font-family: "MiFuente";
+    src: url("FreganSansBold.otf") format("opentype"),
+    font-weight
+}
+body{
+    background-color: black;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.menu {
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    bottom: 0;
+    position: fixed;
+    background: #000000;
+    align-items: center;
+    transition: 100ms;
+}
+.opciones-texto-svg {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+svg.iconos-svg {
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px;
+    stroke: white;
+    cursor: pointer;
+}
+
+svg.iconos-svg:hover{
+    stroke: var(--Evolum);
+
+}
+p.opciones-menu-p {
+    text-align: center;
+    font-family: 'MiFuente';
+    font-size: .5rem;
+    color: white;
+    margin: 5px 0px 0px 0px ;
+}
+.imagen-grande {
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.degradado-imagen-grande {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(0deg, black, transparent 60%);
+}
+.imagen-grande-img {
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-image: url(https://image.tmdb.org/t/p/original/8mjYwWT50GkRrrRdyHzJorfEfcl.jpg);
+    background-position-y: top;
+    background-position-x: center;
+}
+a.boton-ver-pelicula-imagen-grande {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    margin: 0px 0px 60px;
+    background: #c2083633;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: 'MiFuente';
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+a.boton-ver-pelicula-imagen-grande:hover {
+    background: var(--Evolum);
+}
+
+svg.play-svg {
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px 0px 0px;
+}
+svg.play-svg path {
+stroke: white;
+}
+.buscador {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+    margin: 50px 0px 0px 0px;
+    align-items: center;
+}
+.contencedor-buscador {
+    display: flex;
+    align-items: center;
+    background: var(--Evolum);
+    height: 50px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    opacity: .8;
+}
+.contencedor-buscador:hover{
+opacity: 1;
+}
+input.buscador-input {
+    height: 50px;
+    background: black;
+    border: none;
+    color: white;
+    outline: none;
+    text-align: left;
+    padding: 0px 0px 0px 10px;
+    letter-spacing: .5px;
+}
+
+svg.iconos-svg-lupa{
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px;
+    stroke: white;
+    cursor: pointer;
+}
+.peliculas-series {
+    margin: 30px 0px 0px 0px;
+    width: 100%;
+}
+p.titulo-categoria {
+    color: white;
+    text-align: justify;
+    width: fit-content;
+    margin: 0px 0px 10px 10px;
+    font-family: 'MiFuente';
+    font-size: 1rem;
+}
+.imagenes-peliculas-series {
+    width: 100%;
+    height: fit-content;
+    overflow: auto;
+    padding: 0px 10px;
+    display: flex
+;
+}
+
+img.img-peliculas-series-img {
+    width: 25%;
+    padding: 10px;
+    border-radius: 19px;
+    height: fit-content;
+    min-width: 230px;
+}
+.espacio{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+}
+p.titulo-categoria {
+    color: white;
+    text-align: justify;
+    width: fit-content;
+    margin: 0px 0px 0px 10px;
+    font-family: 'MiFuente';
+    display: flex
+;
+    align-items: center;
+}
+svg.flecha-titulo {
+    width: 10px;
+    height: 10px;
+    margin: 0px 0px 0px 5px;
+}
+svg.flecha-titulo path {
+fill: var(--Evolum);
+}
+#Img-ouculta{
+    display: none;
+}
+img.logo-img-grande {
+    position: absolute;
+    width: 400px;
+    margin: 0px 0px 130px 0px;
+    z-index: 1;
+}
+@media (max-width: 621px) {
+    .imagen-grande-img {
+        background-image: url(https://image.tmdb.org/t/p/original/vfzIDQF0Din10nagYxpnEPDenC5.jpg);
+        background-position-y: top;
+        background-position-x: center;
+
+    }
+    #Img-ouculta{
+        display: block;
+    }
+    img.logo-img-grande {
+        position: absolute;
+        width: 300px;
+        margin: 0px 0px 130px 0px;
+        z-index: 1;
+    }
+  }

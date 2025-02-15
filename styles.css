@@ -76,7 +76,7 @@ p.opciones-menu-p {
     width: 100%;
     height: 70vh;
     background-size: cover;
-    background-image: url(https://image.tmdb.org/t/p/original/8mjYwWT50GkRrrRdyHzJorfEfcl.jpg);
+    background-image: url(https://image.tmdb.org/t/p/original/kVd3a9YeLGkoeR50jGEXM6EqseS.jpg);
     background-position-y: top;
     background-position-x: center;
 }
@@ -214,6 +214,7 @@ img.logo-img-grande {
     width: 25%;
     min-width: 230px;
 }
+/* aca para abajo esta la parte de pelicula */
 .video-pelicula{
     width: 100%;
     display: flex;
@@ -349,10 +350,12 @@ img.img-galeria-img {
     width: 80%;
     padding: 5px;
     border-radius: 10px;
+    object-fit: cover;
 }
+/* termina parte de la pelicula */
 @media (max-width: 621px) {
     .imagen-grande-img {
-        background-image: url(https://image.tmdb.org/t/p/original/vfzIDQF0Din10nagYxpnEPDenC5.jpg);
+        background-image: url(https://image.tmdb.org/t/p/original/uc5U4GCZu9Z2Zb3yqk5fZfLwawR.jpg);
         background-position-y: top;
         background-position-x: center;
 

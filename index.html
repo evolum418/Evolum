@@ -8,6 +8,31 @@
 </head>
 <body>
 
+<style>
+.imagen-grande-img {
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-image: url(https://image.tmdb.org/t/p/original/kVd3a9YeLGkoeR50jGEXM6EqseS.jpg);
+    background-position-y: top;
+    background-position-x: center;
+}
+@media (max-width: 621px) {
+    .imagen-grande-img {
+        background-image: url(https://image.tmdb.org/t/p/original/uc5U4GCZu9Z2Zb3yqk5fZfLwawR.jpg);
+        background-position-y: top;
+        background-position-x: center;
+
+    }
+    img.logo-img-grande {
+        position: absolute;
+        width: 300px;
+        margin: 0px 0px 130px 0px;
+        z-index: 1;
+    }
+  }
+</style>    
+
 <div class="buscador">
     <div class="contencedor-buscador">
     <svg class="iconos-svg-lupa" xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none">

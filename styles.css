@@ -1,5 +1,5 @@
 :root {
-    --Evolum: #c20836;
+    --Evolum: hsl(240, 70%, 12%);
 }
 *{
     margin: 0px;
@@ -31,6 +31,7 @@ body{
     background: #000000;
     align-items: center;
     transition: 100ms;
+    z-index: 999;
 }
 .opciones-texto-svg {
     width: 50px;
@@ -86,7 +87,7 @@ a.boton-ver-pelicula-imagen-grande {
     width: fit-content;
     height: fit-content;
     margin: 0px 0px 60px;
-    background: #c2083633;
+    background: rgba(9, 9, 52, 0.40);
     padding: 10px;
     text-decoration: none;
     border-radius: 10px;
@@ -170,7 +171,7 @@ p.titulo-categoria {
 }
 
 img.img-peliculas-series-img {
-    width: 25%;
+    width: 100%;
     padding: 10px;
     border-radius: 19px;
     height: fit-content;
@@ -178,7 +179,7 @@ img.img-peliculas-series-img {
 }
 .espacio{
     width: 100%;
-    height: 70px;
+    height: 90px;
     background-color: black;
 }
 p.titulo-categoria {
@@ -207,6 +208,147 @@ img.logo-img-grande {
     width: 400px;
     margin: 0px 0px 130px 0px;
     z-index: 1;
+}
+.link-pelicula{
+    width: min-content;
+    width: 25%;
+    min-width: 230px;
+}
+.video-pelicula{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pelicula-mp4 {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  border: none;
+  max-width: 800px;
+  }
+  .play-reproducir-svg {
+      position: absolute;
+      width: 20%;
+      height: 20%;
+      z-index: 1;
+  }
+  svg.play-reproducir-svg path {
+      stroke: var(--Evolum);
+  }
+  .degradado-padre {
+      width: 100%;
+      height: 50vh;
+      position: absolute;
+      display: flex;
+      align-items: end;
+  }
+  .degradado-hijo {
+      width: 100%;
+      height: 10vh;
+      background: linear-gradient(360deg, black, transparent 30%);
+  }
+  
+  
+  .informacion-pelicula-serie {
+    margin: 30px 0px 0px 0px;
+      position: absolute;
+      width: 100%;
+  }
+  a.reproducir-pelicula {
+      background: #090933;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      border-radius: 40px;
+      color: white;
+      text-decoration: none;
+      font-family: 'MiFuente';
+      width: fit-content;
+      height: fit-content;
+      margin: 0px 0px 0px 10px;
+  }
+  svg.play-reproducir-svg-2 {
+      width: 30px;
+      height: 30px;
+      fill: white;
+      margin: 0px 5px;
+  }
+  .botones-reproducir-compartir {
+      width: 100%;
+      height: fit-content;
+      display: flex
+  ;
+  }
+  a.compartir {
+      display: flex;
+      align-items: center;
+      background: var(--Evolum);
+      margin: 0px 10px;
+      border-radius: 20px;
+  }
+  .logo-img {
+      width: 100%;
+      height: fit-content;
+      display: flex
+  ;
+  }
+  img.logo-pelicula-serie {
+      width: 60%;
+      margin: 20px 0px 0px 10px;
+      max-width: 310px;
+      min-width: 225px;
+  }
+  p.descripcion {
+      width: 100%;
+      color: #ffffffb3;
+      text-align: justify;
+      padding: 10px;
+      font-size: 1rem;
+      font-family: sans-serif;
+      height: 100px;
+      overflow: auto;
+      margin: 10px 0px 0px 0px;
+  }
+  p.resumen {
+    width: fit-content;
+    margin: 40px 10px 0px 10px;
+    color: white;
+    text-align: justify;
+    font-size: 1.3rem;
+    font-family: 'MiFuente';
+}
+.imagenes-pelicula {
+    width: 90%;
+    margin: 30px 0px 0px 10%;
+    padding: 10px 0px 10px 10px;
+    background: hsl(240, 70%, 12%);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+p.Galeria {
+    color: white;
+    font-size: 1.5rem;
+    text-align: justify;
+    margin: 0px 0px 10px 10px;
+    width: fit-content;
+    font-family: 'MiFuente';
+}
+.img-galeria {
+    width: 100%;
+    display: flex
+;
+}
+.img-galeria {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+}
+img.img-galeria-img {
+    width: 80%;
+    padding: 5px;
+    border-radius: 10px;
 }
 @media (max-width: 621px) {
     .imagen-grande-img {

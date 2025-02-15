@@ -347,10 +347,11 @@ p.Galeria {
     overflow: auto;
 }
 img.img-galeria-img {
-    width: 80%;
+    width: 251px;
     padding: 5px;
     border-radius: 10px;
     object-fit: cover;
+    height: 145px;
 }
 /* termina parte de la pelicula */
 @media (max-width: 621px) {
